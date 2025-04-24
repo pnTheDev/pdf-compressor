@@ -5,8 +5,8 @@ import tempfile
 import os
 
 # Streamlit app layout
-st.title("PDF Date Modifier and Compressor")
-st.write("Upload a PDF file to reduce its size by 10% and update all annotation dates to 9 April 2025.")
+st.title("PDF Compressor")
+st.write("Upload a PDF file to reduce its size and keeping everything else intact for FREE!.")
 
 uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
 
