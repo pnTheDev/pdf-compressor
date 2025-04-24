@@ -45,3 +45,18 @@ if uploaded_file is not None:
     # Clean up temp files
     os.remove(temp_input.name)
     os.remove(temp_output.name)
+
+# Page config (optional icon, layout, etc.)
+st.set_page_config(page_title="PDF Date Tool", page_icon="📄", layout="centered")
+
+# Hide Streamlit branding, top-right menu, and footer
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    .viewerBadge_container__1QSob {display: none;}
+    .stDeployButton {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
