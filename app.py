@@ -26,10 +26,10 @@ st.markdown("""
     /* Hide Deploy button */
     .stDeployButton {display: none;}
 
-    /* Hide bottom-right Manage App iframe */
+    /* Hide Manage App button (iframe version) */
     iframe[title="streamlit-app-viewer"] {display: none;}
 
-    /* Additional iframe (fallback) */
+    /* Fallback to hide any viewer badge iframe */
     iframe[title="Streamlit Viewer Badge"] {display: none;}
     </style>
 """, unsafe_allow_html=True)
