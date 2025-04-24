@@ -20,17 +20,18 @@ st.markdown("""
     /* Hide header */
     header {visibility: hidden;}
 
-    /* Hide GitHub badge */
-    .viewerBadge_container__1QSob {display: none;}
+    /* Hide GitHub badge and Streamlit deploy button */
+    .viewerBadge_container__1QSob,
+    .stDeployButton,
+    iframe[title="streamlit-app-viewer"],
+    iframe[title="Streamlit Viewer Badge"] {
+        display: none !important;
+    }
 
-    /* Hide Deploy button */
-    .stDeployButton {display: none;}
-
-    /* Hide Manage App button (iframe version) */
-    iframe[title="streamlit-app-viewer"] {display: none;}
-
-    /* Fallback to hide any viewer badge iframe */
-    iframe[title="Streamlit Viewer Badge"] {display: none;}
+    /* Hide Streamlit Cloud's 'Manage app' button */
+    button[data-testid="manage-app-button"] {
+        display: none !important;
+    }
     </style>
 """, unsafe_allow_html=True)
 
