@@ -5,7 +5,7 @@ import tempfile
 import os
 
 # ✅ THIS MUST BE FIRST
-st.set_page_config(page_title="PDF Date Tool", page_icon="📄", layout="centered")
+st.set_page_config(page_title="PDF Compressor Tool", page_icon="📄", layout="centered")
 
 
 # Hide all Streamlit branding
