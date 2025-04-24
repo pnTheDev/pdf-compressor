@@ -11,11 +11,25 @@ st.set_page_config(page_title="PDF Date Tool", page_icon="📄", layout="centere
 # Hide all Streamlit branding
 st.markdown("""
     <style>
+    /* Hide top-right menu */
     #MainMenu {visibility: hidden;}
+    
+    /* Hide footer */
     footer {visibility: hidden;}
+    
+    /* Hide header */
     header {visibility: hidden;}
+
+    /* Hide GitHub badge */
     .viewerBadge_container__1QSob {display: none;}
+
+    /* Hide Deploy button */
     .stDeployButton {display: none;}
+
+    /* Hide bottom-right Manage App iframe */
+    iframe[title="streamlit-app-viewer"] {display: none;}
+
+    /* Additional iframe (fallback) */
     iframe[title="Streamlit Viewer Badge"] {display: none;}
     </style>
 """, unsafe_allow_html=True)
