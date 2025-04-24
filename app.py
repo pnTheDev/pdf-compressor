@@ -7,16 +7,19 @@ import os
 # ✅ THIS MUST BE FIRST
 st.set_page_config(page_title="PDF Date Tool", page_icon="📄", layout="centered")
 
-# 👻 Hide Streamlit header, footer, and GitHub links
-hide_streamlit_style = """
+
+# Hide all Streamlit branding
+st.markdown("""
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
     .viewerBadge_container__1QSob {display: none;}
-    .stDeployButton {visibility: hidden;}
+    .stDeployButton {display: none;}
+    iframe[title="Streamlit Viewer Badge"] {display: none;}
     </style>
-"""
+""", unsafe_allow_html=True)
+
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Streamlit app layout
