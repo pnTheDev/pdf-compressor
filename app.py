@@ -20,8 +20,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
 # Streamlit app layout
 st.title("PDF Compressor")
 st.write("Upload a PDF file to reduce its size and keeping everything else intact for FREE!.")
